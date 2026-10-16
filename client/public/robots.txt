@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+# Add: Sitemap: https://YOUR-API-DOMAIN/sitemap.xml

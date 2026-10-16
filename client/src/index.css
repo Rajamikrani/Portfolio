@@ -1,0 +1,13 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth}
+body{@apply bg-white text-slate-800 dark:bg-slate-950 dark:text-slate-300 antialiased}
+@layer components{
+.btn{@apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition disabled:opacity-50 disabled:cursor-not-allowed}
+.btn-p{@apply bg-cyan-500 border-cyan-500 text-slate-950 hover:bg-cyan-400 dark:hover:bg-cyan-400}
+.card{@apply rounded-xl border border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/60 p-5}
+.input{@apply w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500}
+.tag{@apply inline-block rounded-md bg-cyan-500/10 text-cyan-700 dark:text-cyan-400 px-2 py-0.5 text-xs font-mono}
+.h2{@apply text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-8}
+}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
